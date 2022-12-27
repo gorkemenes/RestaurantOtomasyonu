@@ -45,16 +45,16 @@ public class Login extends Restaurant {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 
-		JLabel restad = new JLabel("AKÝNSA RESTAURANT");
+		JLabel restad = new JLabel("AKINSA RESTAURANT");
 		restad.setForeground(new Color(0, 0, 0));
 		restad.setBounds(76, 168, 300, 79);
 		restad.setFont(new Font("Verdana", Font.BOLD | Font.ITALIC, 24));
 		
-		JLabel hg= new JLabel("HOÞ GELDÝNÝZ");
+		JLabel hg= new JLabel("HOS GELDINIZ");
 		hg.setFont(new Font("Verdana", Font.BOLD | Font.ITALIC, 25));
 		hg.setBounds(116, 216, 297, 54);
 		
-		JButton cikis = new JButton("ÇIKIÞ");
+		JButton cikis = new JButton("CIKIS");
 		cikis.setBounds(264, 380, 112, 45);
 		cikis.setBackground(new Color(255, 0, 0));
 		cikis.setForeground(new Color(0, 0, 0));
@@ -68,7 +68,7 @@ public class Login extends Restaurant {
 		});
 		
 		
-		JButton giris = new JButton("MENÜ GÝRÝÞ");
+		JButton giris = new JButton("MENU GIRIS");
 		giris.setBounds(108, 380, 119, 45);
 		giris.setForeground(new Color(0, 0, 0));
 		giris.setBackground(new Color(0, 128, 0));
@@ -76,9 +76,9 @@ public class Login extends Restaurant {
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				Restaurant menü = new Restaurant();
-				menü.getContentPane().setLayout(null);
-				menü.setVisible(true);
+				Restaurant menÃ¼ = new Restaurant();
+				menÃ¼.getContentPane().setLayout(null);
+				menÃ¼.setVisible(true);
 				dispose();
 			}
 			
