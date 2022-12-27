@@ -1,4 +1,4 @@
-package Ürünler;
+package ÃœrÃ¼nler;
 
 import java.util.ArrayList;
 
@@ -10,7 +10,7 @@ public class Icecekler {
 		icecekler = new ArrayList<String>();
 		icecekler.add("Kola");
 		icecekler.add("Fanta");
-		icecekler.add("Þalgam");
+		icecekler.add("Salgam");
 		icecekler.add("Ayran");
 		icecekler.add("Su");
 		
