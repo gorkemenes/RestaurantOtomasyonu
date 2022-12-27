@@ -1,4 +1,4 @@
-package Ürünler;
+package ÃœrÃ¼nler;
 
 import java.util.ArrayList;
 
@@ -8,11 +8,11 @@ public class Anayemek {
 	
 	public Anayemek() {
 		anayemekler = new ArrayList<String>();
-		anayemekler.add("İskender ");
-		anayemekler.add("Et Döner");
+		anayemekler.add("Iskender ");
+		anayemekler.add("Et DÃ¶ner");
 		anayemekler.add("Kuru Fasulye");
 		anayemekler.add("Adana Kebap");
-		anayemekler.add("Karışık Izgara");
+		anayemekler.add("Karisik Izgara");
 		
 		fiyatlar = new ArrayList<Integer>();
 		fiyatlar.add(85);
