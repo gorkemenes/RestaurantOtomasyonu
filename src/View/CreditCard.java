@@ -47,15 +47,15 @@ public class CreditCard extends Restaurant {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 
-		JCheckBox tüketicionay = new JCheckBox("Tüketici Onayý");
-		tüketicionay.setBackground(Color.WHITE);
-		tüketicionay.setBounds(200, 165, 99, 23);
+		JCheckBox tÃ¼keticionay = new JCheckBox("TÃ¼ketici Onayi");
+		tÃ¼keticionay.setBackground(Color.WHITE);
+		tÃ¼keticionay.setBounds(200, 165, 99, 23);
 
-		JCheckBox kullansöz = new JCheckBox("Kullanýcý Sözleþmesi");
-		kullansöz.setBackground(Color.WHITE);
-		kullansöz.setBounds(200, 193, 99, 23);
+		JCheckBox kullansÃ¶z = new JCheckBox("Kullanici SÃ¶zleÅŸmesi");
+		kullansÃ¶z.setBackground(Color.WHITE);
+		kullansÃ¶z.setBounds(200, 193, 99, 23);
 
-		JLabel cardName_lbl = new JLabel("KART SAHÝBÝ");
+		JLabel cardName_lbl = new JLabel("KART SAHIBI");
 		cardName_lbl.setBounds(35, 20, 106, 26);
 
 		JLabel kartNo_lbl = new JLabel("KART NUMARASI");
@@ -155,28 +155,28 @@ public class CreditCard extends Restaurant {
 			public void actionPerformed(ActionEvent e) {
 					if(cardName_txt.getText().length() < 2)
 					{
-					JOptionPane.showMessageDialog(null, "Lütfen Geçerli Bir Ýsim Giriniz!");
+					JOptionPane.showMessageDialog(null, "LÃ¼tfen GeÃ§erli Bir Isim Giriniz!");
 					}
 					else {
 						if (cardNo_txt.getText().length() != 16)
 						{
-							JOptionPane.showMessageDialog(null, "Lütfen Geçerli Bir Kart No Giriniz!");
+							JOptionPane.showMessageDialog(null, "LÃ¼tfen GeÃ§erli Bir Kart No Giriniz!");
 						}
 						else {
 							if (cvc_txt.getText().length() !=3)
 							{
-								JOptionPane.showMessageDialog(null, "CVC'yi Doðru Giriniz!");
+								JOptionPane.showMessageDialog(null, "CVC'yi Dogru Giriniz!");
 								
 							} 
 							else {
-								if (tüketicionay.isSelected() && kullansöz.isSelected()) {
+								if (tÃ¼keticionay.isSelected() && kullansÃ¶z.isSelected()) {
 									
-									JOptionPane.showMessageDialog(null, "Ödeme Alýndý Teþekkürler.");
+									JOptionPane.showMessageDialog(null, "Ã–deme Alindi TeÃ¾ekkÃ¼rler.");
 									dispose();
 								}
 
 							else {
-							JOptionPane.showMessageDialog(null, "Lütfen Tüm Sözleþmeleri Onaylayýnýz! ");
+							JOptionPane.showMessageDialog(null, "LÃ¼tfen TÃ¼m SÃ¶zlesmeleri Onaylayiniz! ");
 							}
 							}
 						}
@@ -194,7 +194,7 @@ public class CreditCard extends Restaurant {
 			
 		});
 
-		JLabel price_lbl = new JLabel("Ödenecek Tutar: " + toplamtutar + " TL");
+		JLabel price_lbl = new JLabel("Ã–denecek Tutar: " + toplamtutar + " TL");
 		price_lbl.setBounds(200, 128, 167, 51);
 
 		JLabel icon1 = new JLabel(new ImageIcon(getClass().getResource("creditcards.jpeg")));
@@ -203,8 +203,8 @@ public class CreditCard extends Restaurant {
 		JLabel icon2 = new JLabel(new ImageIcon(getClass().getResource("creditcard.jpeg")));
 		icon2.setBounds(76, 214, 83, 64);
 
-		contentPane.add(kullansöz);
-		contentPane.add(tüketicionay);
+		contentPane.add(kullansÃ¶z);
+		contentPane.add(tÃ¼keticionay);
 		contentPane.add(cardName_lbl);
 		contentPane.add(kartNo_lbl);
 		contentPane.add(cardNo_txt);
